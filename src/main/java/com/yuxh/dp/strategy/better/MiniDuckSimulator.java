@@ -10,5 +10,9 @@ public class MiniDuckSimulator {
         Duck duck = new ReadheadDuck();
         duck.performQuack();
         duck.performFly();
+
+        System.out.println("RubberDuck here");
+        Duck duck2 = new RubberDuck();
+        duck2.performQuack();
     }
 }

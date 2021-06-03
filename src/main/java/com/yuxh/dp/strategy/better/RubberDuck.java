@@ -5,10 +5,11 @@ package com.yuxh.dp.strategy.better;
  * @Date: 2021-05-28.
  * @Time: 10:11
  */
-public class RubberDuck extends Duck implements QuackBehavior {
-    @Override
-    public void quake() {
-        System.out.println("I squeak!");
+public class RubberDuck extends Duck {
+
+    RubberDuck() {
+        flyBehavior = new FlyWithWings();
+        quackBehavior = () -> System.out.println("Squeak function");
     }
 
 
